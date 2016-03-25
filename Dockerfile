@@ -10,6 +10,7 @@ RUN cd /opt/node/lib/node_modules/monaca/node_modules/.bin && \
     ln -s /opt/node/bin/cordova . && \
     mkdir /app 
 
+USER docker
 WORKDIR /app
     
 VOLUME ["/opt/node/lib/node_modules"]
